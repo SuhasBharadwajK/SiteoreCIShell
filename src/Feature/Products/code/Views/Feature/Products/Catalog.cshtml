@@ -1,0 +1,12 @@
+﻿@model SitecoreCITest.Feature.Products.Models.CatalogViewModel
+
+<div class="products-container">
+    <ul>
+        @foreach (var product in Model.Products)
+        {
+            <li>
+                <a>@product.Name</a> (@product.Id)
+            </li>
+        }
+    </ul>
+</div>
